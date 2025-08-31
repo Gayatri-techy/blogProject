@@ -33,10 +33,13 @@ app.use(
   session({
     secret: "XSecretKeyX",
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
     store: MongoStore.create({
       mongoUrl: process.env.MONGODB_URL,
     }),
+    cookie: {
+      maxAge: 1000 * 60 * 60 * 24,
+    },
   })
 );
 
@@ -83,3 +86,5 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+
+console.log("MongoDB URL:", process.env.MONGODB_URL);
