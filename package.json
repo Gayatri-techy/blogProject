@@ -1,0 +1,32 @@
+{
+  "name": "7.-fullstack-blog-project",
+  "version": "1.0.0",
+  "description": "fullstack blog project",
+  "main": "server.js",
+  "scripts": {
+    "build": "npm install",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "post",
+    "blogs"
+  ],
+  "author": "gayathri",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^1.41.3",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "express-session": "^1.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.14.3",
+    "multer": "^1.4.5-lts.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
