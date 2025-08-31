@@ -87,4 +87,3 @@ mongoose
     console.log(err);
   });
 
-console.log("MongoDB URL:", process.env.MONGODB_URL);
